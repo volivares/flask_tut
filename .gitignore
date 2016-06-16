@@ -1,0 +1,9 @@
+# virtual environ
+venv/
+
+# dependencies front
+app/static/bower_components/
+
+# byte code
+*.py[co]
+*$py.class
