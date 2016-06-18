@@ -27,7 +27,7 @@ def add_entry():
 	return redirect(url_for('show_entries'))
 
 @app.route('/tutorial/login', methods=['GET', 'POST'])
-def login():
+def tutorial_login():
 	error = None
 	if request.method == 'POST':
 		if request.form['username'] != app.config['USERNAME']:
@@ -41,7 +41,16 @@ def login():
 	return render_template('tutorial/login.html', error=error)
 
 @app.route('/tutorial/logout')
-def logout():
+def tutorial_logout():
 	session.pop('logged_in', None)
 	flash('You were logged out')
 	return redirect(url_for('show_entries'))
+
+# main page of application
+@app.route('/')
+def show_dashboard():
+	return render_template('dashboard.html')
+
+@app.route('/login')
+def login():
+	return render_template('login.html')
