@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+
+from webapp import app
+
+############################### START FLASK ####################################
+app.run()
