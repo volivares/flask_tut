@@ -49,8 +49,15 @@ def tutorial_logout():
 # main page of application
 @app.route('/')
 def show_dashboard():
-	return render_template('dashboard.html')
+	ctx = {
+		'graphic': True
+	}
+	return render_template('dashboard.html', ctx = ctx)
 
 @app.route('/login')
 def login():
 	return render_template('login.html')
+
+@app.route('/layout')
+def show_layout():
+	return render_template('layout.html')

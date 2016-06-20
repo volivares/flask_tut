@@ -9,28 +9,28 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>XXXXX - Grupo Sadasi</title>
+    <title>Dashboard - Grupo Sadasi</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="../static/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bower_components/metisMenu/dist/metisMenu.min.css')}}" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="../static/css/timeline.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/timeline.css')}}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../static/css/sb-admin-2.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/sb-admin-2.css')}}" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="../static/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bower_components/morrisjs/morris.css')}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../static/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Project elements CSS -->
-    <link href="../static/css/default.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/default.css')}}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dashboard.html">GRUPO SADASI - Usuario</a>
+                <a class="navbar-brand" href="index.html">GRUPO SADASI - Usuario</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -124,12 +124,12 @@
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil de Usuario</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones de configuración</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -139,66 +139,13 @@
             <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-tree fa-fw"></i> Arbol de Cuentas<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Modificar <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#"><i class="fa fa-eye fa-fw"></i> Desplegar</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-pencil-square-o fa-fw"></i> Agregar/Editar Nodo</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-share-square-o fa-fw"></i> Mover Nodo</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Histórico</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Aprobar</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Planeación</a>
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-envelope-o fa-fw"></i> Notificaciones</a>
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-bug fa-fw"></i> Soporte</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
+                {% include 'navbar.html' %}
             </div>
             <!-- /.navbar-static-side -->
         </nav>
 
         <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Layout</h1>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                
-            </div>
-            <!-- /.row -->
+            {% block content %}{% endblock %}
         </div>
         <!-- /#page-wrapper -->
 
@@ -217,10 +164,12 @@
     <!-- Morris Charts JavaScript -->
     <script src="../static/bower_components/raphael/raphael.min.js"></script>
     <script src="../static/bower_components/morrisjs/morris.min.js"></script>
-    <script src="../static/data/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../static/js/sb-admin-2.js"></script>
+
+    <!-- Additional JS -->
+    {% block additinaljs %}{% endblock %}
 
 </body>
 
