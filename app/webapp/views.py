@@ -61,3 +61,15 @@ def login():
 @app.route('/layout')
 def show_layout():
 	return render_template('layout.html')
+
+@app.route('/tree/')
+def graphic_tree():
+	return render_template('tree/display-edit.html')
+
+@app.route('/tree/historic')
+def show_timeline():
+	return render_template('tree/historic.html')
+
+@app.route('/tree/approvals')
+def show_approvals():
+	return render_template('tree/approval.html')
