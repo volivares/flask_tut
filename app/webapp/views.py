@@ -50,6 +50,12 @@ def tutorial_logout():
 @app.route('/')
 def show_dashboard():
 	ctx = {
+		'news': {
+			'new_accounts': 2,
+			'tree_request': 6,
+			'support': 1
+		},
+		'notifications': [],
 		'graphic': True
 	}
 	return render_template('dashboard.html', ctx = ctx)
