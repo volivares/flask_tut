@@ -1,237 +1,201 @@
 {% extends "layout.html" %}
 {% block content %}
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Historico del Arbol</h1>
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Historico del Arbol</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-clock-o fa-fw"></i> Actividad del Arbol
                 </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Actividad del Arbol
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <ul class="timeline">
-                                <li>
-                                    <div class="timeline-badge success"><i class="fa fa-tree"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Creación del árbol</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 42 days ago by dregalado</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge"><i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Ingresos Punto de Venta</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 30 days ago by dregalado</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge danger"><i class="fa fa-minus"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Ingresos Por Renta</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 15 days ago by volivares</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning"><i class="fa fa-edit"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Nodo editado</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 12 days ago by volivares</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Nodo: Ingresos Punto de Venta</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge warning"><i class="fa fa-sitemap"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Cambio de parent</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 5 days ago by dregalado </small>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Nodo: Ingresos Punto de Venta</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge"><i class="fa fa-envelope-o"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Solicitud de Modificación</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 4 days ago by rlopez</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Agregar Nodo: Gastos Punto de Venta</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge info"><i class="fa fa-thumbs-o-up"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Modificación Aprovada</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 4 days ago by dregalado </small>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Nodo: Ingresos Punto de Venta</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge info"><i class="fa fa-thumbs-o-down"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Modificación Rechazada</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 3 days ago by volivares</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Cuenta no válida</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-tag"></i> Notación
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group">
-                                <div class="list-group-item">
-                                    <i class="fa fa-tree"></i> Creación de Arbol
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge success"><i class="fa fa-tree"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Creación del árbol</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 42 days ago by dregalado</small>
+                                    </p>
                                 </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-plus"></i> Nuevo noodo
-                                </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-minus"></i> Nodo Eliminado
-                                </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-edit"></i> Nodo Editado
-                                </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-sitemap"></i> Cambio de parent
-                                </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-envelope-o"></i> Solicitud de Modificación
-                                </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-thumbs-o-up"></i> Solicitud Aprovada
-                                </div>
-                                <div class="list-group-item">
-                                    <i class="fa fa-thumbs-o-down"></i> Solicitud Rechazada
+                                <div class="timeline-body">
+                                    <p></p>
                                 </div>
                             </div>
-                            <!-- /.list-group -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-                                </a>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge"><i class="fa fa-plus"></i>
                             </div>
-                            <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Ingresos Punto de Venta</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 30 days ago by dregalado</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger"><i class="fa fa-minus"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Ingresos Por Renta</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 15 days ago by volivares</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge warning"><i class="fa fa-edit"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Nodo editado</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 12 days ago by volivares</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Nodo: Ingresos Punto de Venta</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge warning"><i class="fa fa-sitemap"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Cambio de parent</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 5 days ago by dregalado </small>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Nodo: Ingresos Punto de Venta</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge"><i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Solicitud de Modificación</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 4 days ago by rlopez</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Agregar Nodo: Gastos Punto de Venta</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge info"><i class="fa fa-thumbs-o-up"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Modificación Aprovada</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 4 days ago by dregalado </small>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Nodo: Ingresos Punto de Venta</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge info"><i class="fa fa-thumbs-o-down"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Modificación Rechazada</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 3 days ago by volivares</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Cuenta no válida</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- /.col-lg-4 -->
+                <!-- /.panel-body -->
             </div>
-            <!-- /.row -->
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-tag"></i> Notación
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <i class="fa fa-tree"></i> Creación de Arbol
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-plus"></i> Nuevo noodo
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-minus"></i> Nodo Eliminado
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-edit"></i> Nodo Editado
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-sitemap"></i> Cambio de parent
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-envelope-o"></i> Solicitud de Modificación
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-thumbs-o-up"></i> Solicitud Aprovada
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fa fa-thumbs-o-down"></i> Solicitud Rechazada
+                        </div>
+                    </div>
+                    <!-- /.list-group -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="list-group">
+                        {% for notification in ctx.notifications %}
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-chevron-right fa-fw"></i> {{ notification[0] }}
+                                <span class="pull-right text-muted small"><em>{{ notification[1] }} ago</em>
+                                </span>
+                            </a>
+                        {% else %}
+                            <em>No hay notificaciones.</em>
+                        {% endfor %}
+                    </div>
+                    <!-- /.list-group -->
+                    <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
 {% endblock %}
