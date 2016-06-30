@@ -29,3 +29,8 @@ def close_db(error):
     """Closes the database again at the request"""
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
+
+
+def init_db():
+    """wrapper for init_db inside dbconnector"""
+    dbc.init_db()
