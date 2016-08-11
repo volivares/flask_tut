@@ -2,5 +2,5 @@
 
 from webapp import app
 
-############################### START FLASK ####################################
+# START FLASK APP
 app.run()
